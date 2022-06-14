@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+.button-1 {
+    text-align: center;
+    justify-content: center;
+    transition: 0.4s;
+
+    color: #fff;
+    border: none;
+    width: 100vw;
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    padding: 2em 1.5em;
+    
+    text-decoration: none;
+    font: inherit;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    width: 8em;
+    height: 3em;
+    flex: 1 1 150px;
+
+    border: 2px solid rgb(55, 0, 207);
+    cursor: pointer;
+    background: none;
+    font: inherit;
+    margin: 0.5em;
+    line-height: 1;
+
+    transition: 0.3s;
+    border-radius: 0.25em;
+}
+
+.whatsapp {
+    background-color: rgb(69, 255, 44);
+}
+
+.discord {
+    background-color: rgb(48, 150, 245);
+}
+
+.button-1:hover {
+    transform: perspective(500px) translateZ(42px);
+}
+
+button:hover, button:focus, a:hover {
+    border-color: rgb(55, 0, 207);
+    color: #fff;
+}
+
+.whatsapp:hover {
+    box-shadow: 0 0.7em 0.5em -0.4em rgb(0, 255, 34);
+    transform: translateY(-0.25em);
+}
+
+.discord:hover {
+    box-shadow: 0 0.7em 0.5em -0.4em rgba(0, 38, 255, 0.952);
+    transform: translateY(-0.25em);
+}
